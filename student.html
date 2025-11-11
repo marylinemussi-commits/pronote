@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CampusConnect · Espace Élève</title>
+    <link rel="stylesheet" href="../css/dashboard.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="brand">CampusConnect</div>
+      <nav id="sidebar-links"></nav>
+      <button id="logout-btn" class="logout-btn">Se déconnecter</button>
+    </aside>
+    <section class="main-area">
+      <header class="topbar">
+        <h1 id="page-title">Espace Élève</h1>
+        <div class="user-meta" id="user-meta"></div>
+      </header>
+      <main class="dashboard" id="dashboard-content"></main>
+    </section>
+    <script type="module">
+      import { initDashboard } from "../js/dashboard.js";
+      initDashboard("STUDENT");
+    </script>
+  </body>
+</html>
+
